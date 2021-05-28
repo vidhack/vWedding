@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'events',
     'guests',
     'hosts',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +81,7 @@ WSGI_APPLICATION = 'vwedss.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'wedding_demo.sqlite3',
     }
 }
 
